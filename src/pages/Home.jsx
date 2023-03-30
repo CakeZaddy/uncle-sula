@@ -9,13 +9,9 @@ export default function Home() {
   const [projectsCom, setProjectsCom] = useState(false)
   const [skillsCom, setSkillsCom] = useState(true)
 
-  if (skillsCom === 'true') {
-    setProjectsCom(false)
-  }
-
   return (
     <>
-      <div className=''>
+      <div class=''>
         <div className='flex items-center justify-center m-5 '>
           <img
             class='h-[250px] md:h-[350px] lg:h-[450px] '
@@ -88,13 +84,13 @@ export default function Home() {
       <div class='flex justify-center items-center'>
         <div class='flex justify-center items-center bg-gray-300 p-1 space-x-2 rounded-2xl cursor-pointer my-5 transition duration-250 ease-in-out '>
           <p
-            onClick={() => setProjectsCom(true)}
-            class='font-semibold text-lg hover:bg-white hover:font-bold hover:text-xl active:font-bold active:text-xl active:bg-white py-4 px-20 rounded-2xl transition duration-250 ease-in-out '
+            onClick={() => setProjectsCom(true) & setSkillsCom(false)}
+            class='font-semibold text-lg hover:bg-white hover:font-bold hover:text-xl active:font-bold active:text-xl focus:bg-white py-4 px-20 rounded-2xl transition duration-250 ease-in-out '
           >
             Projects
           </p>
           <p
-            onClick={() => setSkillsCom(true)}
+            onClick={() => setSkillsCom(true) & setProjectsCom(false)}
             class='font-semibold text-lg hover:bg-white hover:font-bold hover:text-xl active:font-bold active:text-xl active:bg-white py-4 px-20 rounded-2xl transition duration-250 ease-in-out '
           >
             Skills

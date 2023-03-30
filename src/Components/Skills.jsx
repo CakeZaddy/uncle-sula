@@ -88,7 +88,7 @@ export default function Skills() {
             <li class='mb-3 flex space-x-2'>
               <TiTick class='border border-1 border-green-500 text-green-500 rounded-[50%] mt-1.5 ' />
               <div>
-                <h1 class='font-semibold text-gray-800'>Fondant Cakes</h1>
+                <h1 class='font-semibold  text-gray-800'>Fondant Cakes</h1>
                 <p class='text-sm text-gray-500  '>Expert</p>
               </div>
             </li>
