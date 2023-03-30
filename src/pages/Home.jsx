@@ -6,12 +6,12 @@ import Projects from '../Components/Projects'
 import Skills from '../Components/Skills'
 
 export default function Home() {
-  const [projectsCom, setProjectsCom] = useState(false)
-  const [skillsCom, setSkillsCom] = useState(true)
+  const [projectsCom, setProjectsCom] = useState(true)
+  const [skillsCom, setSkillsCom] = useState(false)
 
   return (
     <>
-      <div class=''>
+      <div class='flex flex-col items-center'>
         <div className='flex items-center justify-center m-5 '>
           <img
             class='h-[250px] md:h-[350px] lg:h-[450px] '
@@ -67,7 +67,7 @@ export default function Home() {
             </li>
           </ul>
         </div>
-        <div class='flex justify-center items-center space-x-3 transition-all '>
+        <div class='flex justify-center items-center space-x-3 transition-all w-[90%] '>
           <button class='text-white text-xl flex justify-center items-center bg-blue-600 hover:bg-blue-700 p-5 rounded-xl transition-all duration-250 ease-in-out '>
             Resume
             <BiLinkExternal class='text-white text-xl ml-2 ' />
@@ -85,13 +85,13 @@ export default function Home() {
         <div class='flex justify-center items-center bg-gray-300 p-1 space-x-2 rounded-2xl cursor-pointer my-5 transition duration-250 ease-in-out '>
           <p
             onClick={() => setProjectsCom(true) & setSkillsCom(false)}
-            class='font-semibold text-lg hover:bg-white hover:font-bold hover:text-xl active:font-bold active:text-xl focus:bg-white py-4 px-20 rounded-2xl transition duration-250 ease-in-out '
+            class='font-semibold text-lg hover:bg-white hover:font-bold hover:text-xl active:font-bold active:text-xl focus:bg-white py-4 px-[50px] md:px-[70px] lg:px-[85px] rounded-2xl transition duration-250 ease-in-out '
           >
             Projects
           </p>
           <p
             onClick={() => setSkillsCom(true) & setProjectsCom(false)}
-            class='font-semibold text-lg hover:bg-white hover:font-bold hover:text-xl active:font-bold active:text-xl active:bg-white py-4 px-20 rounded-2xl transition duration-250 ease-in-out '
+            class='font-semibold text-lg hover:bg-white hover:font-bold hover:text-xl active:font-bold active:text-xl active:bg-white py-4 px-[50px] md:px-[70px] lg:px-[85px] rounded-2xl transition duration-250 ease-in-out '
           >
             Skills
           </p>
