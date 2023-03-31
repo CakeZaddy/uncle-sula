@@ -31,7 +31,10 @@ export default function Home() {
             <h1
               onClick={() => setWeb(true) & setBaker(false)}
               class='text-xl text-center font-bold rounded-full py-1 px-3 cursor-pointer'
-              style={{ backgroundColor: web ? 'black' : '' }}
+              style={{
+                backgroundColor: web ? 'black' : '',
+                color: web ? 'silver' : '',
+              }}
             >
               Web Developer
             </h1>
@@ -44,7 +47,10 @@ export default function Home() {
             <h1
               onClick={() => setBaker(true) & setWeb(false)}
               class='text-xl text-center font-bold rounded-full py-1 cursor-pointer'
-              style={{ backgroundColor: baker ? 'black' : '' }}
+              style={{
+                backgroundColor: baker ? 'black' : '',
+                color: baker ? 'silver' : '',
+              }}
             >
               Baker
             </h1>
@@ -100,14 +106,20 @@ export default function Home() {
           <p
             onClick={() => setProjectsCom(true) & setSkillsCom(false)}
             class='font-semibold text-lg hover:bg-white hover:font-bold hover:text-xl active:font-bold py-4 px-[50px] md:px-[70px] lg:px-[85px] rounded-2xl transition duration-250 ease-in-out hover:dark:bg-slate-800'
-            style={{ backgroundColor: projectsCom ? 'black' : '' }}
+            style={{
+              backgroundColor: projectsCom ? 'black' : '',
+              color: projectsCom ? 'silver' : '',
+            }}
           >
             Projects
           </p>
           <p
             onClick={() => setSkillsCom(true) & setProjectsCom(false)}
             class='font-semibold text-lg hover:bg-white hover:font-bold hover:text-xl active:font-bold py-4 px-[50px] md:px-[70px] lg:px-[85px] rounded-2xl transition duration-250 ease-in-out hover:dark:bg-slate-800 '
-            style={{ backgroundColor: skillsCom ? 'black' : '' }}
+            style={{
+              backgroundColor: skillsCom ? 'black' : '',
+              color: skillsCom ? 'silver' : '',
+            }}
           >
             Skills
           </p>
