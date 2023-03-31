@@ -12,49 +12,63 @@ export default function Skills() {
               <li class='mb-3 flex space-x-2'>
                 <TiTick class='border border-1 border-green-500 text-green-500 rounded-[50%] mt-1.5 ' />
                 <div>
-                  <h1 class='font-semibold text-gray-800'>HTML</h1>
+                  <h1 class='font-semibold text-gray-800 dark:text-white '>
+                    HTML
+                  </h1>
                   <p class='text-sm text-gray-500  '>Intermediate</p>
                 </div>
               </li>
               <li class='mb-3 flex space-x-2'>
                 <TiTick class='border border-1 border-green-500 text-green-500 rounded-[50%] mt-1.5 ' />
                 <div>
-                  <h1 class='font-semibold text-gray-800'>Git</h1>
+                  <h1 class='font-semibold text-gray-800 dark:text-white '>
+                    Git
+                  </h1>
                   <p class='text-sm text-gray-500  '>Advanced</p>
                 </div>
               </li>
               <li class='mb-3 flex space-x-2'>
                 <TiTick class='border border-1 border-green-500 text-green-500 rounded-[50%] mt-1.5 ' />
                 <div>
-                  <h1 class='font-semibold text-gray-800'>CSS</h1>
+                  <h1 class='font-semibold text-gray-800 dark:text-white '>
+                    CSS
+                  </h1>
                   <p class='text-sm text-gray-500  '>Intermediate</p>
                 </div>
               </li>
               <li class='mb-3 flex space-x-2'>
                 <TiTick class='border border-1 border-green-500 text-green-500 rounded-[50%] mt-1.5 ' />
                 <div>
-                  <h1 class='font-semibold text-gray-800'>JavaScript</h1>
+                  <h1 class='font-semibold text-gray-800 dark:text-white '>
+                    JavaScript
+                  </h1>
                   <p class='text-sm text-gray-500  '>Basic</p>
                 </div>
               </li>
               <li class='mb-3 flex space-x-2'>
                 <TiTick class='border border-1 border-green-500 text-green-500 rounded-[50%] mt-1.5 ' />
                 <div>
-                  <h1 class='font-semibold text-gray-800'>BootStrap</h1>
+                  <h1 class='font-semibold text-gray-800 dark:text-white '>
+                    BootStrap
+                  </h1>
                   <p class='text-sm text-gray-500  '>Basic</p>
                 </div>
               </li>
               <li class='mb-3 flex space-x-2'>
                 <TiTick class='border border-1 border-green-500 text-green-500 rounded-[50%] mt-1.5 ' />
                 <div>
-                  <h1 class='font-semibold text-gray-800'>TailwindCSS</h1>
+                  <h1 class='font-semibold text-gray-800 dark:text-white '>
+                    TailwindCSS
+                  </h1>
                   <p class='text-sm text-gray-500  '>Advanced</p>
                 </div>
               </li>
               <li class='mb-3 flex space-x-2'>
                 <TiTick class='border border-1 border-green-500 text-green-500 rounded-[50%] mt-1.5 ' />
                 <div>
-                  <h1 class='font-semibold text-gray-800'>React</h1>
+                  <h1 class='font-semibold text-gray-800 dark:text-white '>
+                    React
+                  </h1>
                   <p class='text-sm text-gray-500  '>Basic</p>
                 </div>
               </li>
@@ -67,35 +81,45 @@ export default function Skills() {
             <li class='mb-3 flex space-x-2'>
               <TiTick class='border border-1 border-green-500 text-green-500 rounded-[50%] mt-1.5 ' />
               <div>
-                <h1 class='font-semibold text-gray-800'>Baking</h1>
+                <h1 class='font-semibold text-gray-800 dark:text-white '>
+                  Baking
+                </h1>
                 <p class='text-sm text-gray-500  '>Intermediate</p>
               </div>
             </li>
             <li class='mb-3 flex space-x-2'>
               <TiTick class='border border-1 border-green-500 text-green-500 rounded-[50%] mt-1.5 ' />
               <div>
-                <h1 class='font-semibold text-gray-800'>Cake Decorating</h1>
+                <h1 class='font-semibold text-gray-800 dark:text-white '>
+                  Cake Decorating
+                </h1>
                 <p class='text-sm text-gray-500  '>Expert</p>
               </div>
             </li>
             <li class='mb-3 flex space-x-2'>
               <TiTick class='border border-1 border-green-500 text-green-500 rounded-[50%] mt-1.5 ' />
               <div>
-                <h1 class='font-semibold text-gray-800'>Cream Cakes</h1>
+                <h1 class='font-semibold text-gray-800 dark:text-white '>
+                  Cream Cakes
+                </h1>
                 <p class='text-sm text-gray-500  '>Intermediate</p>
               </div>
             </li>
             <li class='mb-3 flex space-x-2'>
               <TiTick class='border border-1 border-green-500 text-green-500 rounded-[50%] mt-1.5 ' />
               <div>
-                <h1 class='font-semibold  text-gray-800'>Fondant Cakes</h1>
+                <h1 class='font-semibold text-gray-800 dark:text-white '>
+                  Fondant Cakes
+                </h1>
                 <p class='text-sm text-gray-500  '>Expert</p>
               </div>
             </li>
             <li class='mb-3 flex space-x-2'>
               <TiTick class='border border-1 border-green-500 text-green-500 rounded-[50%] mt-1.5 ' />
               <div>
-                <h1 class='font-semibold text-gray-800'>Sugar Craft</h1>
+                <h1 class='font-semibold text-gray-800 dark:text-white '>
+                  Sugar Craft
+                </h1>
                 <p class='text-sm text-gray-500  '>Expert</p>
               </div>
             </li>

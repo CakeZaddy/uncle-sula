@@ -40,10 +40,18 @@ export default function Home() {
           </div>
         </div>
         <div class='flex justify-center items-center space-x-5 m-5'>
-          <FaLinkedin class='text-xl text-gray-500 hover:text-black hover:scale-150 transition duration-400 ease-in-out cursor-pointer ' />
-          <FiGithub class='text-xl text-gray-500 hover:text-black hover:scale-150 transition duration-400 ease-in-out cursor-pointer ' />
-          <FaTwitter class='text-xl text-gray-500 hover:text-black hover:scale-150 transition duration-400 ease-in-out cursor-pointer ' />
-          <FaInstagram class='text-xl text-gray-500 hover:text-black hover:scale-150 transition duration-400 ease-in-out cursor-pointer ' />
+          <a href='https://www.linkedin.com/in/cakezaddy/' target='_blank'>
+            <FaLinkedin class='text-xl text-gray-500 hover:text-black hover:scale-150 transition duration-400 ease-in-out dark:text-white ' />
+          </a>
+          <a href='https://github.com/CakeZaddy' target='_blank'>
+            <FiGithub class='text-xl text-gray-500 hover:text-black hover:scale-150 transition duration-400 ease-in-out dark:text-white ' />
+          </a>
+          <a href='https://twitter.com/Susu_Omo' target='_blank'>
+            <FaTwitter class='text-xl text-gray-500 hover:text-black hover:scale-150 transition duration-400 ease-in-out dark:text-white ' />
+          </a>
+          <a href='https://www.instagram.com/cake_zaddy/' target='_blank'>
+            <FaInstagram class='text-xl text-gray-500 hover:text-black hover:scale-150 transition duration-400 ease-in-out dark:text-white ' />
+          </a>
         </div>
         <div class='flex justify-center'>
           <ul class='flex justify-between px-10 items-center text-center my-5 space-x-10 md:spa '>
@@ -72,26 +80,28 @@ export default function Home() {
             Resume
             <BiLinkExternal class='text-white text-xl ml-2 ' />
           </button>
-          <div class='p-3 bg-gray-200 hover:bg-gray-400 rounded-lg hover:rounded-xl cursor-pointer transition-all duration-250 ease-in-out'>
+          <div class='p-3 bg-gray-300 hover:bg-gray-400 rounded-lg hover:rounded-xl cursor-pointer transition-all duration-250 ease-in-out dark:text-slate-800 '>
             <FiMail class='text-xl' />
           </div>
-          <div class='p-3 bg-gray-200 hover:bg-gray-400 rounded-lg hover:rounded-xl cursor-pointer'>
+          <div class='p-3 bg-gray-300 hover:bg-gray-400 rounded-lg hover:rounded-xl cursor-pointer transition-all duration-250 ease-in-out dark:text-slate-800 '>
             <FaWhatsapp class='text-xl' />
           </div>
         </div>
       </div>
       <hr class='mt-5 border-gray-700 mx-[5%] bg-center ' />
       <div class='flex justify-center items-center'>
-        <div class='flex justify-center items-center bg-gray-300 p-1 space-x-2 rounded-2xl cursor-pointer my-5 transition duration-250 ease-in-out '>
+        <div class='flex justify-center items-center bg-gray-300 dark:bg-gray-500 p-1 space-x-2 rounded-2xl cursor-pointer my-5 transition duration-250 ease-in-out '>
           <p
             onClick={() => setProjectsCom(true) & setSkillsCom(false)}
-            class='font-semibold text-lg hover:bg-white hover:font-bold hover:text-xl active:font-bold active:text-xl focus:bg-white py-4 px-[50px] md:px-[70px] lg:px-[85px] rounded-2xl transition duration-250 ease-in-out '
+            class='font-semibold text-lg hover:bg-white hover:font-bold hover:text-xl active:font-bold py-4 px-[50px] md:px-[70px] lg:px-[85px] rounded-2xl transition duration-250 ease-in-out hover:dark:bg-slate-800'
+            style={{ backgroundColor: projectsCom ? 'black' : '' }}
           >
             Projects
           </p>
           <p
             onClick={() => setSkillsCom(true) & setProjectsCom(false)}
-            class='font-semibold text-lg hover:bg-white hover:font-bold hover:text-xl active:font-bold active:text-xl active:bg-white py-4 px-[50px] md:px-[70px] lg:px-[85px] rounded-2xl transition duration-250 ease-in-out '
+            class='font-semibold text-lg hover:bg-white hover:font-bold hover:text-xl active:font-bold py-4 px-[50px] md:px-[70px] lg:px-[85px] rounded-2xl transition duration-250 ease-in-out hover:dark:bg-slate-800 '
+            style={{ backgroundColor: skillsCom ? 'black' : '' }}
           >
             Skills
           </p>

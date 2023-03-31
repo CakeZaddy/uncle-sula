@@ -5,8 +5,8 @@ export default function Projects() {
   return (
     <>
       <div class='grid grid-cols-1 md:grid-cols-2 justify-items-center gap-5 mb-5 mx-[5%] lg:gap-10 lg:mx-[13%] '>
-        <a href='https://realtor-site-v2.vercel.app/'>
-          <div class='w-[350] xl:w-[450px] relative rounded-xl drop-shadow-[0px_5px_5px_rgba(0,0,0,0.50)] hover:drop-shadow-[0_10px_10px_rgba(0,0,0,0.50)] '>
+        <a href='https://realtor-site-v2.vercel.app/' target='_blank'>
+          <div class='w-[350] xl:w-[450px] relative rounded-xl drop-shadow-[0px_5px_5px_rgba(0,0,0,0.50)] hover:drop-shadow-[0_10px_10px_rgba(0,0,0,0.50)] dark:drop-shadow-[0px_5px_5px_rgba(192,192,192,0.50)] hover:dark:drop-shadow-[0_10px_10px_rgba(192,192,192,0.50)] '>
             <img
               class='w-full rounded-xl  '
               src='https://res.cloudinary.com/dwgberjxq/image/upload/v1680193975/PortFolio/Realtor_Site_ihmdpf.png'
@@ -20,8 +20,8 @@ export default function Projects() {
             </div>
           </div>
         </a>
-        <a href='https://cakezaddy.github.io/Image-Rotator/'>
-          <div class='w-[350] lg:w-[450px] relative rounded-xl drop-shadow-[0px_5px_5px_rgba(0,0,0,0.50)] hover:drop-shadow-[0_10px_10px_rgba(0,0,0,0.50)] '>
+        <a href='https://cakezaddy.github.io/Image-Rotator/' target='_blank'>
+          <div class='w-[350] xl:w-[450px] relative rounded-xl drop-shadow-[0px_5px_5px_rgba(0,0,0,0.50)] hover:drop-shadow-[0_10px_10px_rgba(0,0,0,0.50)] dark:drop-shadow-[0px_5px_5px_rgba(192,192,192,0.50)] hover:dark:drop-shadow-[0_10px_10px_rgba(192,192,192,0.50)] '>
             <img
               class='w-full rounded-xl'
               src='https://res.cloudinary.com/dwgberjxq/image/upload/v1680193966/PortFolio/Photo_Library_ddgx2v.png'
@@ -35,8 +35,8 @@ export default function Projects() {
             </div>
           </div>
         </a>
-        <a href='https://cakezaddy.github.io/Notepad-App/'>
-          <div class='w-[350] lg:w-[450px] relative rounded-xl drop-shadow-[0px_5px_5px_rgba(0,0,0,0.50)] hover:drop-shadow-[0_10px_10px_rgba(0,0,0,0.50)] '>
+        <a href='https://cakezaddy.github.io/Notepad-App/' target='_blank'>
+          <div class='w-[350] xl:w-[450px] relative rounded-xl drop-shadow-[0px_5px_5px_rgba(0,0,0,0.50)] hover:drop-shadow-[0_10px_10px_rgba(0,0,0,0.50)] dark:drop-shadow-[0px_5px_5px_rgba(192,192,192,0.50)] hover:dark:drop-shadow-[0_10px_10px_rgba(192,192,192,0.50)] '>
             <img
               class='w-full rounded-xl'
               src='https://res.cloudinary.com/dwgberjxq/image/upload/v1680193955/PortFolio/NotePad_xggqo3.png'
@@ -50,8 +50,8 @@ export default function Projects() {
             </div>
           </div>
         </a>
-        <a href='https://cakezaddy.github.io/Digital-Clock/'>
-          <div class='w-[350] lg:w-[450px] relative rounded-xl drop-shadow-[0px_5px_5px_rgba(0,0,0,0.50)] hover:drop-shadow-[0_10px_10px_rgba(0,0,0,0.50)] '>
+        <a href='https://cakezaddy.github.io/Digital-Clock/' target='_blank'>
+          <div class='w-[350] xl:w-[450px] relative rounded-xl drop-shadow-[0px_5px_5px_rgba(0,0,0,0.50)] hover:drop-shadow-[0_10px_10px_rgba(0,0,0,0.50)] dark:drop-shadow-[0px_5px_5px_rgba(192,192,192,0.50)] hover:dark:drop-shadow-[0_10px_10px_rgba(192,192,192,0.50)] '>
             <img
               class='w-full rounded-xl'
               src='https://res.cloudinary.com/dwgberjxq/image/upload/v1680193938/PortFolio/Digital_Clock_jgrsda.png'
@@ -65,8 +65,8 @@ export default function Projects() {
             </div>
           </div>
         </a>
-        <a href='https://cakezaddy.github.io/Dad-Jokes/'>
-          <div class='w-[350] lg:w-[450px] relative rounded-xl drop-shadow-[0px_5px_5px_rgba(0,0,0,0.50)] hover:drop-shadow-[0_10px_10px_rgba(0,0,0,0.50)] '>
+        <a href='https://cakezaddy.github.io/Dad-Jokes/' target='_blank'>
+          <div class='w-[350] xl:w-[450px] relative rounded-xl drop-shadow-[0px_5px_5px_rgba(0,0,0,0.50)] hover:drop-shadow-[0_10px_10px_rgba(0,0,0,0.50)] dark:drop-shadow-[0px_5px_5px_rgba(192,192,192,0.50)] hover:dark:drop-shadow-[0_10px_10px_rgba(192,192,192,0.50)] '>
             <img
               class='w-full rounded-xl'
               src='https://res.cloudinary.com/dwgberjxq/image/upload/v1680193923/PortFolio/Dad_Jokes_rzf1go.png'
@@ -80,8 +80,11 @@ export default function Projects() {
             </div>
           </div>
         </a>
-        <a href='http://cakezaddy.github.io/Double-LandingPage/'>
-          <div class='w-[350] lg:w-[450px] relative rounded-xl drop-shadow-[0px_5px_5px_rgba(0,0,0,0.50)] hover:drop-shadow-[0_10px_10px_rgba(0,0,0,0.50)] '>
+        <a
+          href='http://cakezaddy.github.io/Double-LandingPage/'
+          target='_blank'
+        >
+          <div class='w-[350] xl:w-[450px] relative rounded-xl drop-shadow-[0px_5px_5px_rgba(0,0,0,0.50)] hover:drop-shadow-[0_10px_10px_rgba(0,0,0,0.50)] dark:drop-shadow-[0px_5px_5px_rgba(192,192,192,0.50)] hover:dark:drop-shadow-[0_10px_10px_rgba(192,192,192,0.50)] '>
             <img
               class='w-full rounded-xl'
               src='https://res.cloudinary.com/dwgberjxq/image/upload/v1680193945/PortFolio/Double_LandingPage_r1mesi.png'
