@@ -4,10 +4,14 @@ import { FiMail, FiGithub } from 'react-icons/fi'
 import { BiLinkExternal } from 'react-icons/bi'
 import Projects from '../Components/Projects'
 import Skills from '../Components/Skills'
+import Baker from '../Components/Baker'
+import WebDeveloper from '../Components/WebDeveloper'
 
 export default function Home() {
   const [projectsCom, setProjectsCom] = useState(true)
   const [skillsCom, setSkillsCom] = useState(false)
+  const [web, setWeb] = useState(false)
+  const [baker, setBaker] = useState(true)
 
   return (
     <>
@@ -15,29 +19,45 @@ export default function Home() {
         <div className='flex items-center justify-center m-5 '>
           <img
             class='h-[250px] md:h-[350px] lg:h-[450px] '
-            src='https://res.cloudinary.com/dwgberjxq/image/upload/v1679934731/Udemy/susu_vdmwnx.png'
+            src='https://res.cloudinary.com/dwgberjxq/image/upload/v1680278328/PortFolio/susu_rly2uw.png'
             alt=''
           />
         </div>
         <h1 class='font-bold text-[30px] text-center uppercase '>
           Sulaimon Omotosho
         </h1>
-        <div class='flex justify-center space-x-10 mt-5'>
+        <div class='flex justify-center space-x-4 mt-5'>
           <div class=''>
-            <h1 class='text-xl font-bold'>Web Developer</h1>
-            <ul class=''>
+            <h1
+              onClick={() => setWeb(true) & setBaker(false)}
+              class='text-xl text-center font-bold rounded-full py-1 px-3 cursor-pointer'
+              style={{ backgroundColor: web ? 'black' : '' }}
+            >
+              Web Developer
+            </h1>
+            <ul class='text-center'>
               <li class='text-sm font-bold text-gray-500'>Frontend</li>
               <li class='text-sm font-bold text-gray-500'>Backend</li>
             </ul>
           </div>
           <div>
-            <h1 class='text-xl font-bold'>Baker</h1>
-            <ul>
+            <h1
+              onClick={() => setBaker(true) & setWeb(false)}
+              class='text-xl text-center font-bold rounded-full py-1 cursor-pointer'
+              style={{ backgroundColor: baker ? 'black' : '' }}
+            >
+              Baker
+            </h1>
+            <ul class='text-center'>
               <li class='text-sm font-bold text-gray-500'>Baking</li>
               <li class='text-sm font-bold text-gray-500'>Cake Decoration</li>
               <li class='text-sm font-bold text-gray-500'>Sugar Crafting</li>
             </ul>
           </div>
+        </div>
+        <div>
+          {baker && <Baker />}
+          {web && <WebDeveloper />}
         </div>
         <div class='flex justify-center items-center space-x-5 m-5'>
           <a href='https://www.linkedin.com/in/cakezaddy/' target='_blank'>
@@ -53,39 +73,25 @@ export default function Home() {
             <FaInstagram class='text-xl text-gray-500 hover:text-black hover:scale-150 transition duration-400 ease-in-out dark:text-white ' />
           </a>
         </div>
-        <div class='flex justify-center'>
-          <ul class='flex justify-between px-10 items-center text-center my-5 space-x-10 md:spa '>
-            <li>
-              <h1 class='font-bold text-l'>6</h1>
-              <p class='font-medium text-gray-500 text-sm '>
-                Months of <br /> work
-              </p>
-            </li>
-            <li>
-              <h1 class='font-bold text-l'>+40</h1>
-              <p class='font-medium text-gray-500 text-sm '>
-                Completed <br /> projects
-              </p>
-            </li>
-            <li>
-              <h1 class='font-bold text-l'>+8</h1>
-              <p class='font-medium text-gray-500 text-sm '>
-                Satisfied <br /> customers
-              </p>
-            </li>
-          </ul>
-        </div>
         <div class='flex justify-center items-center space-x-3 transition-all w-[90%] '>
           <button class='text-white text-xl flex justify-center items-center bg-blue-600 hover:bg-blue-700 p-5 rounded-xl transition-all duration-250 ease-in-out '>
             Resume
             <BiLinkExternal class='text-white text-xl ml-2 ' />
           </button>
-          <div class='p-3 bg-gray-300 hover:bg-gray-400 rounded-lg hover:rounded-xl cursor-pointer transition-all duration-250 ease-in-out dark:text-slate-800 '>
-            <FiMail class='text-xl' />
-          </div>
-          <div class='p-3 bg-gray-300 hover:bg-gray-400 rounded-lg hover:rounded-xl cursor-pointer transition-all duration-250 ease-in-out dark:text-slate-800 '>
-            <FaWhatsapp class='text-xl' />
-          </div>
+          <a href='mailto:susudef2u@gmail.com'>
+            <div class='p-3 bg-gray-300 hover:bg-gray-400 rounded-lg hover:rounded-xl cursor-pointer transition-all duration-250 ease-in-out dark:text-slate-800 '>
+              <FiMail class='text-xl' />
+            </div>
+          </a>
+          <a
+            href='https://wa.me/2348081433900'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <div class='p-3 bg-gray-300 hover:bg-gray-400 rounded-lg hover:rounded-xl cursor-pointer transition-all duration-250 ease-in-out dark:text-slate-800 '>
+              <FaWhatsapp class='text-xl' />
+            </div>
+          </a>
         </div>
       </div>
       <hr class='mt-5 border-gray-700 mx-[5%] bg-center ' />
