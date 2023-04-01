@@ -6,6 +6,7 @@ import Projects from '../Components/Projects'
 import Skills from '../Components/Skills'
 import Baker from '../Components/Baker'
 import WebDeveloper from '../Components/WebDeveloper'
+import darkToggle from '../App'
 
 export default function Home() {
   const [projectsCom, setProjectsCom] = useState(true)
@@ -14,7 +15,11 @@ export default function Home() {
   const [baker, setBaker] = useState(true)
 
   return (
-    <>
+    <body
+    // class={`relative dark:bg-slate-800 dark:text-white ${
+    //   darkToggle && 'dark'
+    // }`}
+    >
       <div class='flex flex-col items-center'>
         <div className='flex items-center justify-center m-5 '>
           <img
@@ -27,30 +32,12 @@ export default function Home() {
           Sulaimon Omotosho
         </h1>
         <div class='flex justify-center space-x-4 mt-5'>
-          <div class=''>
-            <h1
-              onClick={() => setWeb(true) & setBaker(false)}
-              class='text-xl text-center font-bold rounded-full py-1 px-3 cursor-pointer'
-              style={{
-                backgroundColor: web ? 'black' : '',
-                color: web ? 'silver' : '',
-              }}
-            >
-              Web Developer
-            </h1>
-            <ul class='text-center'>
-              <li class='text-sm font-bold text-gray-500'>Frontend</li>
-              <li class='text-sm font-bold text-gray-500'>Backend</li>
-            </ul>
-          </div>
           <div>
             <h1
               onClick={() => setBaker(true) & setWeb(false)}
-              class='text-xl text-center font-bold rounded-full py-1 cursor-pointer'
-              style={{
-                backgroundColor: baker ? 'black' : '',
-                color: baker ? 'silver' : '',
-              }}
+              class={`text-xl text-center font-bold rounded-full py-1 cursor-pointer ${
+                baker && ' bg-black text-white'
+              } `}
             >
               Baker
             </h1>
@@ -58,6 +45,20 @@ export default function Home() {
               <li class='text-sm font-bold text-gray-500'>Baking</li>
               <li class='text-sm font-bold text-gray-500'>Cake Decoration</li>
               <li class='text-sm font-bold text-gray-500'>Sugar Crafting</li>
+            </ul>
+          </div>
+          <div class=''>
+            <h1
+              onClick={() => setWeb(true) & setBaker(false)}
+              class={`text-xl text-center font-bold rounded-full py-1 px-3 cursor-pointer ${
+                web && ' bg-black text-white'
+              } `}
+            >
+              Web Developer
+            </h1>
+            <ul class='text-center'>
+              <li class='text-sm font-bold text-gray-500'>Frontend</li>
+              <li class='text-sm font-bold text-gray-500'>Backend</li>
             </ul>
           </div>
         </div>
@@ -105,21 +106,17 @@ export default function Home() {
         <div class='flex justify-center items-center bg-gray-300 dark:bg-gray-500 p-1 space-x-2 rounded-2xl cursor-pointer my-5 transition duration-250 ease-in-out '>
           <p
             onClick={() => setProjectsCom(true) & setSkillsCom(false)}
-            class='font-semibold text-lg hover:bg-white hover:font-bold hover:text-xl active:font-bold py-4 px-[50px] md:px-[70px] lg:px-[85px] rounded-2xl transition duration-250 ease-in-out hover:dark:bg-slate-800'
-            style={{
-              backgroundColor: projectsCom ? 'black' : '',
-              color: projectsCom ? 'silver' : '',
-            }}
+            class={`font-semibold text-lg hover:bg-white hover:font-bold hover:text-xl active:font-bold py-4 px-[50px] md:px-[70px] lg:px-[85px] rounded-2xl transition duration-250 ease-in-out hover:dark:bg-slate-800 ${
+              projectsCom && 'bg-white dark:bg-black hover:dark:bg-black'
+            }`}
           >
             Projects
           </p>
           <p
             onClick={() => setSkillsCom(true) & setProjectsCom(false)}
-            class='font-semibold text-lg hover:bg-white hover:font-bold hover:text-xl active:font-bold py-4 px-[50px] md:px-[70px] lg:px-[85px] rounded-2xl transition duration-250 ease-in-out hover:dark:bg-slate-800 '
-            style={{
-              backgroundColor: skillsCom ? 'black' : '',
-              color: skillsCom ? 'silver' : '',
-            }}
+            class={`font-semibold text-lg hover:bg-white hover:font-bold hover:text-xl active:font-bold py-4 px-[50px] md:px-[70px] lg:px-[85px] rounded-2xl transition duration-250 ease-in-out hover:dark:bg-slate-800 ${
+              skillsCom && 'bg-white dark:bg-black hover:dark:bg-black'
+            } `}
           >
             Skills
           </p>
@@ -129,6 +126,6 @@ export default function Home() {
         {projectsCom && <Projects />}
         {skillsCom && <Skills />}
       </div>
-    </>
+    </body>
   )
 }

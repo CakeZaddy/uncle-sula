@@ -17,11 +17,11 @@ function App() {
       <div class='float'>
         <MdDarkMode
           onClick={() => setDarkToggle(true)}
-          class='absolute top-[3%] left-5 z-50 text-3xl text-black '
+          class='absolute top-[80px] left-5 text-3xl dark:hidden '
         />
         <MdLightMode
           onClick={() => setDarkToggle(false)}
-          class='absolute top-[3%] right-5 z-50 text-3xl '
+          class='absolute top-[80px] left-5 text-3xl hidden dark:block '
         />
       </div>
       <Router>
